@@ -1,0 +1,95 @@
+escolha = input("Escolha o meio de transporte (terrestre/aereo/aquatico): ")
+
+if escolha == 'terrestre':
+    a = input("Cabe apenas uma pessoa? s/n ")
+    if a == 's':
+        a1 = input ("É pesado? s/n ")
+        if a1 == 's':
+            print("TRATOR")
+        elif a1 == 'n':
+            a2 = input ("Tem pedal? s/n ")
+            if a2 == 's':
+                print("BICICLETA")
+            else:
+                print("digite algo válido.")
+    
+    elif a == 'n':
+        b = input("Usa capacete? s/n ")
+        if b == 's':
+            print("MOTO")
+        
+    elif a == 'n':
+        b = input("Tem passageiro? s/n ")
+        if b == 's':
+            b1 = input("Usa trilho? s/n ")
+            if b1 == 's':
+                print("TREM")
+            elif b1 == 'n':
+                b2 = input("Anda na pista? s/n ")
+                if b2 == 's':
+                    b3 = input("É alto? s/n ")
+                    if b3 == 's':
+                        b4 = input("Tem carroceria? s/n ")
+                        if b4 == 's':
+                            print("CAMINHÃO")
+                        elif b4 == 'n':
+                            b5 = input ("Pode ter cobrador? s/n ")
+                            if b5 == 's':
+                                print("ÔNIBUS")
+                            elif b5 == 'n':
+                                print("digite algo válido.")
+                    b6 = input("É veículo leve? s/n ")
+                    if b6 == 's':
+                        print("CARRO")
+                    elif b6 == 'n':
+                        print("digite algo válido.")
+        
+if escolha == 'aereo':
+    pular = input("Precisa pular? s/n ")
+    if pular =='s':
+        print("AASA DELTA")
+    elif pular =='n':
+        viaja = input("Viaja dentro? s/n ")
+        if viaja =='s':
+            devagar = input("É devagar? s/n ")
+            if devagar =='s':
+                print("BALÃO")
+            elif devagar == 'n':
+                piloto = input("Tem piloto? s/n ")
+                if piloto == 's':
+                    asasFixas = input("Possui asas fixas? s/n ")
+                    if asasFixas == 's':
+                        print("AVIÃO")
+                    elif asasFixas == 'n':
+                        helice = input("Faz vôo vertical? s/n ")
+                        if helice == 's':
+                            print("HELICÓPTERO")
+                        elif helice == 'n':
+                            print("digite algo válido.")
+
+if escolha == 'aquatico':
+    submarino = input("É coberto d'água? ")
+    if submarino =='s':
+        print("SUBMARINO")
+    elif submarino == 'n':
+        navega = input("Navega na água? s/n ")
+        if navega == 's':
+            vela = input("Possui vela? s/n ")
+            if vela == 's':
+                print("BARCO")
+            elif vela == 'n':
+                motor = input("Possui motor? s/n ")
+                if motor == 's':
+                    navio = input("É alto? s/n ")
+                    if navio == 's':
+                        print("NAVIO")
+                    elif navio == 'n':
+                        lancha = input("Pode ser descoberto? s/n ")
+                        if lancha == 's':
+                            print("LANCHA")
+                        else:
+                            print("digite algo válido.")
+                    else:
+                        print("digite algo válido.")
+        
+    
